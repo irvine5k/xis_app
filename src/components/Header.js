@@ -15,7 +15,6 @@ class Header extends Component {
             <View style={styles.container}>
                 <View style={styles.rowContainer}>
                     <Image source={icon} style={styles.image} />
-                    <Text style={styles.title}>Xis</Text>
                 </View>
             </View>
         )
@@ -27,7 +26,9 @@ const styles = StyleSheet.create({
         marginTop: Platform.OS === 'ios' ? 20 : 0,
         padding: 10,
         borderBottomWidth: 1,
-        borderColor: '#BBB'
+        backgroundColor: '#3c3f44',
+        borderColor: '#3c3f44',
+        alignItems: 'center'
     },
     rowContainer: {
         flexDirection: 'row',
@@ -36,14 +37,8 @@ const styles = StyleSheet.create({
     image: {
         height: 30,
         width: 30,
-        resizeMode: 'contain'
-    },
-    title: {
-        paddingLeft: 5,
-        color: '#000',
-        fontFamily: 'shelter',
-        height: 30,
-        fontSize: 28
+        resizeMode: 'contain',
+        borderRadius: 50
     }
 })
 
