@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     },
     buttom: {
         marginTop: 30,
-        padding: 10,
+        padding: 5,
         backgroundColor: '#4286f4',
         borderRadius: 10
     },
