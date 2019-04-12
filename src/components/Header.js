@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {
     StyleSheet,
-    Text,
     View,
     Platform,
     Image
@@ -26,8 +25,8 @@ const styles = StyleSheet.create({
         marginTop: Platform.OS === 'ios' ? 20 : 0,
         padding: 10,
         borderBottomWidth: 1,
-        backgroundColor: '#FFF',
-        borderColor: '#FFF',
+        backgroundColor: 'transparent',
+        borderColor: 'transparent',
         alignItems: 'center'
     },
     rowContainer: {
@@ -38,6 +37,7 @@ const styles = StyleSheet.create({
         height: 50,
         width: 50,
         resizeMode: 'contain',
+        backgroundColor: 'transparent'
     }
 })
 
