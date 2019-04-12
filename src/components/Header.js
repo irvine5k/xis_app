@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
         marginTop: Platform.OS === 'ios' ? 20 : 0,
         padding: 10,
         borderBottomWidth: 1,
-        backgroundColor: '#3c3f44',
-        borderColor: '#3c3f44',
+        backgroundColor: '#FFF',
+        borderColor: '#FFF',
         alignItems: 'center'
     },
     rowContainer: {
@@ -35,10 +35,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     image: {
-        height: 30,
-        width: 30,
+        height: 50,
+        width: 50,
         resizeMode: 'contain',
-        borderRadius: 50
     }
 })
 

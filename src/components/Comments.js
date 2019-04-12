@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
     nickname: {
         marginLeft: 5,
         fontWeight: 'bold',
-        color: '#dae1ed'
+        color: '#555'
     },
     comment: {
-        color: '#edeeef',
+        color: '#444',
     }
 })
 

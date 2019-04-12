@@ -14,7 +14,7 @@ export default class App extends Component {
             comment: 'Parece a secura do vinão'
         }]
         return (
-            <View style={{ flex: 1, backgroundColor: '#3c3f44' }}>
+            <View style={{ flex: 1, backgroundColor: '#FFF' }}>
                 <Header />
                 <Post image={require('./assets/imgs/fence.jpg')} 
                     comments={comments}/>
