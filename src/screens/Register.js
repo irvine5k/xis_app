@@ -7,47 +7,39 @@ import {
   TextInput
 } from 'react-native'
 
-class Login extends Component {
+class Register extends Component {
   state = {
+    name: '',
     email: '',
-    password: ''
-  }
-
-  login = () => {
-    this.props.navigation.navigate('Profile')
+    password: '',
   }
 
   render() {
     return (
       <View style={styles.container}>
         <TextInput
+          placeholder='Nome'
+          style={styles.input}
+          value={this.state.name}
+          onChangeText={() => this.setState({ name })}
+        />
+        <TextInput
           placeholder='Email'
           style={styles.input}
-          autoFocus={true}
-          keyboardType='email-address'
           value={this.state.email}
-          onChangeText={email => this.setState({ email })}
+          onChangeText={() => this.setState({ email })}
         />
         <TextInput
           placeholder='Senha'
           style={styles.input}
-          secureTextEntry={true}
           value={this.state.password}
-          onChangeText={password => this.setState({ password })}
+          onChangeText={() => this.setState({ password })}
         />
-        <TouchableOpacity 
-          onPress={this.login}
+        <TouchableOpacity
+          onPress={() => { }}
           style={styles.buttom}
         >
-          <Text style={styles.buttomText}>Login</Text>
-        </TouchableOpacity>
-        <TouchableOpacity 
-          onPress={() => {
-            this.props.navigation.navigate('Register')
-          }}
-          style={styles.buttom}
-        >
-          <Text style={styles.buttomText}>Criar nova conta...</Text>
+          <Text style={styles.buttomText}>Registrar</Text>
         </TouchableOpacity>
       </View>
     )
@@ -81,5 +73,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Login
-
+export default Register
